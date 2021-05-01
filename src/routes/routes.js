@@ -1,0 +1,34 @@
+import HomePage from '../pages/Index';
+import AboutMe from '../pages/About';
+import Notfound from '../pages/404';
+import Blog from '../pages/Blog';
+import Projects from '../pages/Projects';
+
+
+export const routers = [
+    {
+        path: '/',
+        component: HomePage,
+        exact: true
+    },
+    {
+        path: '/about',
+        component: AboutMe,
+        exact: false
+    },
+    {
+        path: '/projects',
+        component: Projects,
+        exact: false
+    },
+    {
+        path: '/blog',
+        component: Blog,
+        exact: false
+    },
+    {
+        path: '/*',
+        component: Notfound,
+        exact: false
+    },
+];
