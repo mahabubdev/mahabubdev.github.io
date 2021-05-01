@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://mahabubdev.github.io",
+  "homepage": "http://mahabubdev.github.io/",
   "dependencies": {
     "@iconify-icons/logos": "^1.1.9",
     "@iconify/react": "^1.1.4",
