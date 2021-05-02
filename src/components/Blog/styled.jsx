@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 
-export const ProjectsContainer = styled.section`
+export const BlogContainer = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,14 +27,14 @@ export const ProjectsContainer = styled.section`
     }
 
 
-    .projects {
+    .blogs {
         display: grid;
         grid-template-columns: repeat(3, minmax(360px, 1fr));
         gap: 3rem;
         place-items: center;
         margin-top: 2rem;
 
-        .project_item {
+        .blog_item {
             display: flex;
             flex-direction: column;
             max-width: 100%;
@@ -57,7 +57,6 @@ export const ProjectsContainer = styled.section`
             .img_wrap {
                 width: 100%;
                 cursor: pointer;
-                overflow: hidden;
 
                 img {
                     width: 100%;
@@ -75,7 +74,6 @@ export const ProjectsContainer = styled.section`
                     margin-top: .5rem;
                     align-items: center;
                     gap: .5rem;
-                    flex-wrap: wrap;
 
                     span {
                         display: inline-block;
@@ -98,7 +96,7 @@ export const ProjectsContainer = styled.section`
                         display: flex;
                         padding: .5rem;
                         gap: 0 .35rem;
-                        font-size: .85rem;
+                        font-size: .7rem;
                     }
 
                     .btn-link {
@@ -116,28 +114,5 @@ export const ProjectsContainer = styled.section`
         justify-content: center;
         align-items: center;
         align-content: center;
-    }
-
-
-    /* responsive */
-    @media only screen and (max-width: 1299.9px) {
-        .projects {
-            grid-template-columns: repeat(3, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-    }
-
-    @media only screen and (max-width: 1049.9px) {
-        .projects {
-            grid-template-columns: repeat(3, minmax(250px, 1fr));
-            gap: 2rem;
-        }
-    }
-
-    @media only screen and (max-width: 849.9px) {
-        .projects {
-            grid-template-columns: repeat(1, 1fr);
-            gap: 3.5rem 0;
-        }
     }
 `;

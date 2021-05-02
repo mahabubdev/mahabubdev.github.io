@@ -3,6 +3,7 @@ import AboutMe from '../pages/About';
 import Notfound from '../pages/404';
 import Blog from '../pages/Blog';
 import Projects from '../pages/Projects';
+import UnderConstructionPage from '../pages/UnderConstruction';
 
 
 export const routers = [
@@ -18,12 +19,12 @@ export const routers = [
     },
     {
         path: '/projects',
-        component: Projects,
+        component: UnderConstructionPage,
         exact: false
     },
     {
         path: '/blog',
-        component: Blog,
+        component: UnderConstructionPage,
         exact: false
     },
     {

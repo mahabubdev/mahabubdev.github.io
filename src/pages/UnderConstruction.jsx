@@ -1,11 +1,11 @@
 import SEO from '../components/SEO';
-import Svg404 from '../images/404.svg';
-import { Error404 } from './styled/styled.common';
+import UnderConImg from '../images/under_construction.svg';
+import { UnderConstruction } from './styled/styled.common';
 
 
-const Notfound = () => {
+const UnderConstructionPage = () => {
     return (
-        <Error404>
+        <UnderConstruction>
             <SEO title="React, MERN stack developer | Md Mahabub Alam (mahabubdev)"
                 meta={[
                     {
@@ -27,10 +27,10 @@ const Notfound = () => {
                 ]}
             />
 
-            <img src={Svg404} alt="Error 404" />
-            <h1>Error! Page Not found!</h1>
-        </Error404>
+            <img src={UnderConImg} alt="under_construction" />
+            <h2>This page is in under-construction!</h2>
+        </UnderConstruction>
     );
 };
 
-export default Notfound;
+export default UnderConstructionPage;

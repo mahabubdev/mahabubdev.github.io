@@ -12,6 +12,8 @@ import { skills } from '../data/skills';
 import SkillSection from '../components/Skills';
 import ProjectSummery from '../components/Projects';
 import { projects } from '../data/projects';
+import BlogSummery from '../components/Blog/index';
+import ContactArea from '../components/Contact';
 
 
 
@@ -67,9 +69,6 @@ const HomePage = () => {
                         <li>
                             <Link target="_blank" to='//discord.gg/YYsP2s3HvJ'><Icon icon={discordIcon} /></Link>
                         </li>
-                        
-                        
-                        
                     </ul>
 
                     <div className="btns">
@@ -108,6 +107,10 @@ const HomePage = () => {
             <SkillSection allSkills={skills} />
 
             <ProjectSummery allProjects={projects} />
+
+            {/* <BlogSummery allBlogs={projects} /> */}
+
+            <ContactArea />
         </>
     );
 };

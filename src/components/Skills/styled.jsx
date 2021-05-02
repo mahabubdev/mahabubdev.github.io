@@ -33,6 +33,14 @@ export const SkillNav = styled.ul`
     gap: 0 .85rem;
     list-style: none;
     margin-top: 2rem;
+
+
+
+    /* Responsive */
+
+    @media only screen and (max-width: 767.9px) {
+        flex-wrap: wrap;
+    }
 `;
 
 
@@ -49,9 +57,12 @@ export const AllSkills = styled.div`
     display: grid;
     width: 100%;
     margin-top: 3rem;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, 200px);
     place-items: center;
+    justify-content: center;
+    align-items: center;
     gap: 4rem;
+    transition: all .2s ease;
 
     .skill_item {
         display: flex;
@@ -62,15 +73,41 @@ export const AllSkills = styled.div`
         flex-direction: column;
         align-items: center;
         gap: 0 1rem;
-        min-height: 150px;
+        max-width: 200px;
+        max-height: 200px;
         border-radius: .8rem;
         box-shadow: 0 0 1.5rem 0 rgba(0,0,0,0.08);
+        transition: all .2s ease;
 
         span {
-            font-size: 3em;
+            font-size: 5em;
         }
         small {
             font-size: 1.25em;
+        }
+    }
+
+
+    /* responsive */
+    @media only screen and (max-width: 1399.9px) {
+        grid-template-columns: repeat(auto-fit, 160px);
+        gap: 2.5rem;
+
+        .skill_item {
+            max-width: inherit;
+            max-height: inherit;
+        }
+    }
+
+
+    @media only screen and (max-width: 899.9px) {
+        grid-template-columns: repeat(auto-fit, 150px);
+        gap: 2rem;
+
+        .skill_item {
+            max-width: inherit;
+            max-height: inherit;
+            padding: .7rem;
         }
     }
 `;

@@ -1,15 +1,18 @@
 // icons
-import html5 from '@iconify-icons/logos/html-5';
-import css3 from '@iconify-icons/logos/css-3';
+
 import jsIcon from '@iconify-icons/logos/javascript';
 import bootstrapIcon from '@iconify-icons/logos/bootstrap';
+import html5 from '@iconify-icons/logos/html-5';
+import css3 from '@iconify-icons/logos/css-3';
 import es6Icon from '@iconify-icons/logos/es6';
 import reactIcon from '@iconify-icons/logos/react';
 import reactRouter from '@iconify-icons/logos/react-router';
 import reduxIcon from '@iconify-icons/logos/redux';
 import nodejsIcon from '@iconify-icons/logos/nodejs';
-import expressIcon from '@iconify-icons/logos/express';
-import mongodbIcon from '@iconify-icons/logos/mongodb';
+// import expressIcon from '@iconify-icons/logos/express';
+import expressIcon from '@iconify-icons/simple-icons/express';
+// import mongodbIcon from '@iconify-icons/logos/mongodb';
+import mongodbIcon from '@iconify-icons/vscode-icons/file-type-mongo';
 import tailwindcssIcon from '@iconify-icons/logos/tailwindcss-icon';
 import nextjsIcon from '@iconify-icons/logos/nextjs';
 import graphqlIcon from '@iconify-icons/logos/graphql';
@@ -18,7 +21,8 @@ import prismaIcon from '@iconify-icons/logos/prisma';
 // import sqlIcon from '@iconify-icons/carbon/sql';
 // import mysqlIcon from '@iconify-icons/logos/mysql';
 // import postgresqlIcon from '@iconify-icons/logos/postgresql';
-import sqlIcon from '@iconify-icons/logos/postgresql';
+// import sqlIcon from '@iconify-icons/logos/postgresql';
+import sqlIcon from '@iconify-icons/carbon/sql';
 import materialUi from '@iconify-icons/logos/material-ui';
 import webpackIcon from '@iconify-icons/logos/webpack';
 import pythonIcon from '@iconify-icons/logos/python';
@@ -31,9 +35,13 @@ import herokuIcon from '@iconify-icons/logos/heroku-icon';
 import netlifyIcon from '@iconify-icons/logos/netlify';
 import firebaseIcon from '@iconify-icons/logos/firebase';
 import postmanIcon from '@iconify-icons/logos/postman';
-import nginxIcon from '@iconify-icons/logos/nginx';
-import expoIcon from '@iconify-icons/logos/expo';
+// import nginxIcon from '@iconify-icons/logos/nginx';
+// import expoIcon from '@iconify-icons/logos/expo';
+// import expoIcon from '@iconify-icons/logos/expo-icon';
+import expoIcon from '@iconify-icons/vscode-icons/file-type-expo';
 import typescriptIcon from '@iconify-icons/logos/typescript-icon';
+
+
 
 
 // data
@@ -81,18 +89,7 @@ export const skills = [
         icon: firebaseIcon,
         level: 'expert'
     },
-    {
-        name: 'html',
-        label: 'HTML',
-        icon: html5,
-        level: 'expert'
-    },
-    {
-        name: 'css',
-        label: 'CSS',
-        icon: css3,
-        level: 'expert'
-    },
+    
     {
         name: 'sass',
         label: 'Sass',
@@ -105,6 +102,18 @@ export const skills = [
         icon: bootstrapIcon,
         level: 'expert'
     },
+    // {
+    //     name: 'html',
+    //     label: 'HTML',
+    //     icon: html5,
+    //     level: 'expert'
+    // },
+    // {
+    //     name: 'css',
+    //     label: 'CSS',
+    //     icon: css3,
+    //     level: 'expert'
+    // },
     {
         name: 'nextjs',
         label: 'NextJs',
@@ -125,7 +134,7 @@ export const skills = [
     },
     {
         name: 'expo',
-        label: 'React-Native/Expo',
+        label: 'React-Native',
         icon: expoIcon,
         level: 'comfortable'
     },
@@ -139,12 +148,6 @@ export const skills = [
         name: 'mongodb',
         label: 'MongoDB',
         icon: mongodbIcon,
-        level: 'comfortable'
-    },
-    {
-        name: 'webpack',
-        label: 'Webpack',
-        icon: webpackIcon,
         level: 'comfortable'
     },
     {
@@ -196,12 +199,12 @@ export const skills = [
         icon: sqlIcon,
         level: 'familiar'
     },
-    {
-        name: 'nginx',
-        label: 'Nginx',
-        icon: nginxIcon,
-        level: 'familiar'
-    },
+    // {
+    //     name: 'nginx',
+    //     label: 'Nginx',
+    //     icon: nginxIcon,
+    //     level: 'familiar'
+    // },
     {
         name: 'cicd',
         label: 'CI/CD',
@@ -218,6 +221,12 @@ export const skills = [
         name: 'postman',
         label: 'Postman',
         icon: postmanIcon,
+        level: 'tools'
+    },
+    {
+        name: 'webpack',
+        label: 'Webpack',
+        icon: webpackIcon,
         level: 'tools'
     },
     {
