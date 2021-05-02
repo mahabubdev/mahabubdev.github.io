@@ -126,6 +126,7 @@ export const MobileNav = styled.nav`
     padding: .75rem 1.5rem;
     background-color: white;
 
+
     .nav_logo_img {
         width: 2rem;
         height: 2rem;
