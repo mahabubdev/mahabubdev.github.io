@@ -1,7 +1,7 @@
 // icons
 import html5 from '@iconify-icons/logos/html-5';
 import css3 from '@iconify-icons/logos/css-3';
-import jsIcon from '@iconify-icons/grommet-icons/js';
+import jsIcon from '@iconify-icons/logos/javascript';
 import bootstrapIcon from '@iconify-icons/logos/bootstrap';
 import es6Icon from '@iconify-icons/logos/es6';
 import reactIcon from '@iconify-icons/logos/react';
@@ -15,9 +15,10 @@ import nextjsIcon from '@iconify-icons/logos/nextjs';
 import graphqlIcon from '@iconify-icons/logos/graphql';
 import apollostackIcon from '@iconify-icons/logos/apollostack';
 import prismaIcon from '@iconify-icons/logos/prisma';
-import sqlIcon from '@iconify-icons/carbon/sql';
+// import sqlIcon from '@iconify-icons/carbon/sql';
 // import mysqlIcon from '@iconify-icons/logos/mysql';
 // import postgresqlIcon from '@iconify-icons/logos/postgresql';
+import sqlIcon from '@iconify-icons/logos/postgresql';
 import materialUi from '@iconify-icons/logos/material-ui';
 import webpackIcon from '@iconify-icons/logos/webpack';
 import pythonIcon from '@iconify-icons/logos/python';
@@ -38,27 +39,9 @@ import typescriptIcon from '@iconify-icons/logos/typescript-icon';
 // data
 export const skills = [
     {
-        name: 'html',
-        label: 'HTML',
-        icon: html5,
-        level: 'expert'
-    },
-    {
-        name: 'css',
-        label: 'CSS',
-        icon: css3,
-        level: 'expert'
-    },
-    {
         name: 'js',
         label: 'JavaScripts',
         icon: jsIcon,
-        level: 'expert'
-    },
-    {
-        name: 'bootstrap',
-        label: 'Bootstrap',
-        icon: bootstrapIcon,
         level: 'expert'
     },
     {
@@ -67,12 +50,7 @@ export const skills = [
         icon: es6Icon,
         level: 'expert'
     },
-    {
-        name: 'sass',
-        label: 'Sass',
-        icon: sassIcon,
-        level: 'expert'
-    },
+    
     {
         name: 'react',
         label: 'React',
@@ -92,9 +70,39 @@ export const skills = [
         level: 'expert'
     },
     {
+        name: 'expressJs',
+        label: 'ExpressJs',
+        icon: expressIcon,
+        level: 'expert'
+    },
+    {
         name: 'firebase',
         label: 'Firebase',
         icon: firebaseIcon,
+        level: 'expert'
+    },
+    {
+        name: 'html',
+        label: 'HTML',
+        icon: html5,
+        level: 'expert'
+    },
+    {
+        name: 'css',
+        label: 'CSS',
+        icon: css3,
+        level: 'expert'
+    },
+    {
+        name: 'sass',
+        label: 'Sass',
+        icon: sassIcon,
+        level: 'expert'
+    },
+    {
+        name: 'bootstrap',
+        label: 'Bootstrap',
+        icon: bootstrapIcon,
         level: 'expert'
     },
     {
@@ -126,12 +134,6 @@ export const skills = [
         label: 'NodeJs',
         icon: nodejsIcon,
         level: 'comfortable'
-    },
-    {
-        name: 'expressJs',
-        label: 'ExpressJs',
-        icon: expressIcon,
-        level: 'expert'
     },
     {
         name: 'mongodb',

@@ -17,6 +17,7 @@ export const GlobalStyles = createGlobalStyle`
         text-transform: capitalize;
         border: .15rem solid rgba(0,0,0,0.125);
         transition: all 0.3s ease;
+        cursor: pointer;
 
         &:hover {
             transform: translateY(-.15rem);
@@ -31,6 +32,14 @@ export const GlobalStyles = createGlobalStyle`
 
     .btn-out {
         border: .1rem solid rgba(30, 180, 110, 1);
+    }
+
+    .btn-switch {
+        border: .1rem solid rgba(30, 180, 110, .75);
+    }
+    .btn-switch.active {
+        background-color: #1eb46e;
+        color: white;
     }
 
 `;

@@ -154,16 +154,17 @@ export const IntroPhoto = styled.div`
 export const AboutSummery = styled.div`
     display: flex;
     width: 80%;
-    margin: 3.5rem auto;
+    margin: 5em auto;
     justify-content: center;
     align-items: center;
     gap: 0 3rem;
     border-radius: 1rem;
     box-shadow: 0 0 1.5em 0 rgba(0,0,0,0.06);
-    padding: 5rem 3rem;
+    padding: 6rem 3rem;
     /* background-color: #f5fcf8; */
     background-color: white;
     color: #011A3E;
+
 
     .visual_side {
         display: flex;
@@ -214,6 +215,7 @@ export const AboutSummery = styled.div`
             position: relative;
             text-transform: uppercase;
             padding-left: 1rem;
+            color: #011738;
 
             &:before {
                 display: inline-block;

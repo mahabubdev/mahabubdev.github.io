@@ -8,7 +8,8 @@ import instagramIcon from '@iconify-icons/logos/instagram-icon';
 import facebookIcon from '@iconify-icons/logos/facebook';
 import discordIcon from '@iconify-icons/logos/discord';
 import meImg from '../images/me___pakshiiii-removebg-preview__cropped.png';
-
+import SkillSection from '../components/Skills';
+import { skills } from '../data/skills';
 
 const HomePage = () => {
     return (
@@ -97,6 +98,9 @@ const HomePage = () => {
                     
                 </div>
             </AboutSummery>
+
+
+            <SkillSection allSkills={skills} />
         </>
     );
 };
