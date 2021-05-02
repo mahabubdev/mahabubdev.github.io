@@ -72,12 +72,27 @@ export const NavMenu = styled.ul`
 
 export const MobileNavMenu = styled.ul`
     display: none;
+    position: fixed;
+    width: 100%;
+    max-width: 300px;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    background: linear-gradient(45deg, #52b56e, #4aa363);
     list-style: none;
-    justify-content: flex-end;
-    align-items: center;
+    flex-direction: column;
     gap: 1em;
     margin: 0;
     padding: 1em 0 0;
+
+    .menu_switch {
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 1rem;
+        color: white;
+        font-size: 2rem;
+    }
+
 
     li {
         display: inline-flex;
@@ -87,13 +102,14 @@ export const MobileNavMenu = styled.ul`
         padding: 0;
 
         a, .btn {
-            display: inline-flex;
+            display: flex;
+            width: 100%;
             align-items: center;
             gap: 0 .25em;
             text-decoration: none;
             text-transform: capitalize;
             padding: .7em 1.4em;
-            color: #3a3a3a;
+            color: white;
             font-size: 1.05em;
             margin: 0;
 
@@ -110,7 +126,20 @@ export const MobileNavMenu = styled.ul`
 
     &.active {
         display: flex;
+        z-index: 999;
+        animation: easyCome .3s;
+        transition: all 0.2s ease;
     }
+    @keyframes easyCome {
+        from {
+            right: -301px;
+        }
+        to {
+            right: 0;
+        }
+    }
+
+
 
     @media only screen and (max-width: 991.9px) {
         display: none;
