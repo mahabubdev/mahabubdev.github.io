@@ -27,9 +27,6 @@
     "predeploy": "yarn build",
     "deploy": "gh-pages -d build"
   },
-  "engines": {
-    "node": "12.x"
-  },
   "eslintConfig": {
     "extends": [
       "react-app",
