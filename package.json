@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "http://mahabubdev.github.io/",
   "dependencies": {
+    "@iconify-icons/feather": "^1.1.0",
     "@iconify-icons/logos": "^1.1.9",
     "@iconify/react": "^1.1.4",
     "@testing-library/jest-dom": "^5.11.4",

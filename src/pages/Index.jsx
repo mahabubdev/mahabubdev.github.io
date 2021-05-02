@@ -8,8 +8,13 @@ import instagramIcon from '@iconify-icons/logos/instagram-icon';
 import facebookIcon from '@iconify-icons/logos/facebook';
 import discordIcon from '@iconify-icons/logos/discord';
 import meImg from '../images/me___pakshiiii-removebg-preview__cropped.png';
-import SkillSection from '../components/Skills';
 import { skills } from '../data/skills';
+import SkillSection from '../components/Skills';
+import ProjectSummery from '../components/Projects';
+import { projects } from '../data/projects';
+
+
+
 
 const HomePage = () => {
     return (
@@ -101,6 +106,8 @@ const HomePage = () => {
 
 
             <SkillSection allSkills={skills} />
+
+            <ProjectSummery allProjects={projects} />
         </>
     );
 };
