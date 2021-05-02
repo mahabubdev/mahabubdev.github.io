@@ -72,7 +72,7 @@ const HomePage = () => {
                     </ul>
 
                     <div className="btns">
-                        <Link className="btn btn-pr" to='#'>get resume</Link>
+                        <a rel="noopener noreferrer" className="btn btn-pr" href='https://drive.google.com/u/0/uc?id=1KsHJOuaR-ml1n3u3nOIYrcCWu3kMS1p4&export=download'>get resume</a>
                         <Link className="btn btn-out" to='/about'>about me</Link>
                     </div>
                 </IntroBio>
