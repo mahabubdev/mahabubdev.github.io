@@ -131,11 +131,11 @@ const AboutMe = () => {
                             <li>
                                 <p className="info_title">
                                     <h4>APIs and Microservices - freeCodeCamp</h4>
-                                    <small>Jan 2021 - Apr 2021</small>
+                                    <small>Jan 2021 - Mar 2021</small>
                                 </p>
 
                                 <p className="info_text">
-                                    <small>300 hours of coursework</small>
+                                    <small>300 hours of coursework <Link target="_blank" to="//freecodecamp.org/certification/mahabubdev/apis-and-microservices"s>(credential url)</Link></small>
                                     <small>Certification</small>
                                 </p>
                             </li>
