@@ -2,7 +2,11 @@ language: node_js
 node_js:
   - 14
 
-cache:  yarn
+cache:
+  yarn: true
+  directories:
+    - public
+    - .cache
 
 install:
   - yarn install
@@ -16,8 +20,10 @@ script:
 
 deploy:
   provider: pages
-  skip-cleanup: false
-  # github-token: $GITHUB_TOKEN
+  skip-cleanup: true
+  keep-history: true
+  target_branch: gh-pages
+  github-token: $GITHUB_TOKEN
   local_dir: build
   on:
     branch: main
