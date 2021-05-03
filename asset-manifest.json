@@ -1,29 +1,26 @@
 {
   "files": {
     "main.css": "/static/css/main.9d5b29c0.chunk.css",
-    "main.js": "/static/js/main.8570565f.chunk.js",
-    "main.js.map": "/static/js/main.8570565f.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.dad83f9e.js",
-    "runtime-main.js.map": "/static/js/runtime-main.dad83f9e.js.map",
-    "static/js/2.7ff2622d.chunk.js": "/static/js/2.7ff2622d.chunk.js",
-    "static/js/2.7ff2622d.chunk.js.map": "/static/js/2.7ff2622d.chunk.js.map",
-    "static/js/3.5fa9a67f.chunk.js": "/static/js/3.5fa9a67f.chunk.js",
-    "static/js/3.5fa9a67f.chunk.js.map": "/static/js/3.5fa9a67f.chunk.js.map",
+    "main.js": "/static/js/main.fdf81069.chunk.js",
+    "main.js.map": "/static/js/main.fdf81069.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.c4889d50.js",
+    "runtime-main.js.map": "/static/js/runtime-main.c4889d50.js.map",
+    "static/js/2.37bf6874.chunk.js": "/static/js/2.37bf6874.chunk.js",
+    "static/js/2.37bf6874.chunk.js.map": "/static/js/2.37bf6874.chunk.js.map",
+    "static/js/3.44f9688d.chunk.js": "/static/js/3.44f9688d.chunk.js",
+    "static/js/3.44f9688d.chunk.js.map": "/static/js/3.44f9688d.chunk.js.map",
     "index.html": "/index.html",
     "static/css/main.9d5b29c0.chunk.css.map": "/static/css/main.9d5b29c0.chunk.css.map",
-    "static/js/2.7ff2622d.chunk.js.LICENSE.txt": "/static/js/2.7ff2622d.chunk.js.LICENSE.txt",
+    "static/js/2.37bf6874.chunk.js.LICENSE.txt": "/static/js/2.37bf6874.chunk.js.LICENSE.txt",
     "static/media/404.a6f8736e.svg": "/static/media/404.a6f8736e.svg",
-    "static/media/gardeofy.4041e699.png": "/static/media/gardeofy.4041e699.png",
-    "static/media/green-mart.b81b19d3.png": "/static/media/green-mart.b81b19d3.png",
     "static/media/me___pakshiiii-removebg-preview__cropped.7f8d68bf.png": "/static/media/me___pakshiiii-removebg-preview__cropped.7f8d68bf.png",
-    "static/media/speed-riders.624fc7ab.png": "/static/media/speed-riders.624fc7ab.png",
     "static/media/svg1.aa7627af.svg": "/static/media/svg1.aa7627af.svg",
     "static/media/under_construction.29b3258e.svg": "/static/media/under_construction.29b3258e.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.dad83f9e.js",
-    "static/js/2.7ff2622d.chunk.js",
+    "static/js/runtime-main.c4889d50.js",
+    "static/js/2.37bf6874.chunk.js",
     "static/css/main.9d5b29c0.chunk.css",
-    "static/js/main.8570565f.chunk.js"
+    "static/js/main.fdf81069.chunk.js"
   ]
 }
