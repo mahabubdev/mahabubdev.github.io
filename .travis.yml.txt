@@ -4,15 +4,15 @@ node_js:
 
 cache:
   yarn: true
-  directories:
-    - public
-    - .cache
 
 install:
   - yarn install
 
 env: 
   CI: false
+  REACT_APP_EMAILJS_USER_ID: $REACT_APP_EMAILJS_USER_ID
+  REACT_APP_EMAILJS_SERVICE_KEY: $REACT_APP_EMAILJS_SERVICE_KEY
+  REACT_APP_EMAILJS_TEM_ID: $REACT_APP_EMAILJS_TEM_ID
 
 script:
   # - yarn test

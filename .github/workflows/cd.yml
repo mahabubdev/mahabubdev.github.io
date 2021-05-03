@@ -1,0 +1,53 @@
+name: portfolio_website_CD(continues deployment)
+on:
+  push: 
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on:  ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [14.x]
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    # - run: npm ci
+    env:
+      CI: false
+
+    - name: Installing dependencies
+    - run: npm install
+
+    - name: Preparing github-pages-cli
+    - run: npm install --save-dev gh-pages
+
+    - name: Building app for the production
+    - run: npm run predeploy
+
+    - name: Final safe build for production
+    - run: npm run predeploy
+
+    - name: Deploying in github-pages
+    - run: npm run deploy
+    # - run: npm test
+
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v2
+#       - name: Use Node.js
+#         uses: actions/setup-node@v1
+#         with:
+#           node-version: '14.x'
+#       - run: npm install
+#       - run: npm run build
+#       # - run: npm test
