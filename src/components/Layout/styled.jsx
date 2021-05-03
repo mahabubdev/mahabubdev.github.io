@@ -5,6 +5,19 @@ export const GlobalStyles = createGlobalStyle`
         margin: 0; padding: 0; box-sizing: border-box;
     }
 
+    ::selection {
+        background-color: #011a3e;
+        color: white;
+    }
+
+    *::-webkit-scrollbar {
+        background-color: #d4eddb;
+        width: .4rem;
+    }
+    ::-webkit-scrollbar-thumb {
+        background-color: #52b56e;
+    }
+
     .btn {
         display: inline-flex;
         justify-content: center;
