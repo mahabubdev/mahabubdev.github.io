@@ -6,7 +6,7 @@ function Routers () {
     const currentEnv = process.env.NODE_ENV === 'production' ? process.env.NODE_ENV : undefined;
 
     return (
-        <BrowserRouter basename={currentEnv ? `https://mahabubdev.github.io/` : null}>
+        <BrowserRouter basename={currentEnv ? `/` : null}>
             <Layout>
                 <Switch>
                     {
