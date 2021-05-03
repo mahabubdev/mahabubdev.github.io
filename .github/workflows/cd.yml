@@ -11,9 +11,6 @@ on:
   pull_request:
     branches: [main]
 
-env:
-  CI: false
-
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
