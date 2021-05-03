@@ -99,8 +99,9 @@ const HomePage = () => {
                     </ul>
 
                     <div className="btns">
-                        <a rel="noopener noreferrer" className="btn btn-pr" href='https://drive.google.com/u/0/uc?id=1KsHJOuaR-ml1n3u3nOIYrcCWu3kMS1p4&export=download'>get resume</a>
+                        <a rel="noopener noreferrer" className="btn btn-pr" href='https://drive.google.com/u/0/uc?id=10I3sC1f4uK23Xmmtt_gp4UmKUc1I2dPe&export=download'>get resume</a>
                         <Link className="btn btn-out" to='/about'>about me</Link>
+                        {/* https://drive.google.com/file/d/10I3sC1f4uK23Xmmtt_gp4UmKUc1I2dPe/view?usp=sharing */}
                     </div>
                 </IntroBio>
 
