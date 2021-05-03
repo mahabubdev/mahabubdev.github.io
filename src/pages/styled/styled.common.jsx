@@ -398,3 +398,271 @@ export const UnderConstruction = styled.div`
         height: auto;
     }
 `;
+
+
+export const AboutPage = styled.section`
+    display: block;
+    padding: 60px 0;
+
+    .summary_part {
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        gap: 0 5rem;
+        border-radius: 1rem;
+        box-shadow: 0 0 1.5em 0 rgba(0,0,0,0.06);
+        padding: 6rem 3rem;
+        /* background-color: #f5fcf8; */
+        background-color: white;
+        color: #011A3E;
+
+
+        .visual_side {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: .5rem;
+
+            .img_wrap {
+                display: block;
+                position: relative;
+                width: 100%;
+                max-width: 300px;
+                height: auto;
+                z-index: 1;
+
+                img {
+                    width: 100%;
+                    border-radius: .85rem;
+                    box-shadow: 0 0 1em 0 rgba(30, 180, 110, .1);
+                }
+
+                &:before {
+                    display: block;
+                    position: absolute;
+                    content: '';
+                    top: .5rem;
+                    left: -1rem;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: .85rem;
+                    border: 3px dashed #79d9a1;
+                    z-index: -1;
+                    opacity: .6;
+                }
+            }
+        }
+
+
+        .content_side {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem 0;
+            width: 80%;
+            max-width: 500px;
+
+            h2 {
+                position: relative;
+                text-transform: uppercase;
+                padding-left: 1rem;
+                color: #011738;
+
+                &:before {
+                    display: inline-block;
+                    position: absolute;
+                    content: '';
+                    top: 0;
+                    left: 0;
+                    width: .3rem;
+                    height: 100%;
+                    background-color: #64d9a2;
+                }
+            }
+
+            .btns {
+                display: flex;
+                gap: 0 1rem;
+            }
+            
+            .bios {
+                display: grid;
+                margin-top: 1rem;
+                grid-template-columns: repeat(2, 1fr);
+                /* place-items: center; */
+                justify-content: center;
+                align-items: center;
+                gap: 1rem 2.5rem;
+
+                .bio_item {
+                    display: inline-flex;
+                    align-items: center;
+                    gap: .7rem;
+                    font-size: 1rem;
+                }
+            }
+        }
+
+
+        /* responsive */
+        @media only screen and (max-width: 991.9px) {
+            flex-direction: column;
+            justify-content: inherit;
+            /* align-items: center; */
+            gap: 3rem 0;
+
+            .visual_side {
+                .img_wrap {
+                    max-width: inherit;
+                }
+            }
+
+            .content_side {
+                div {
+                    display: block;
+                    text-align: center;
+                }
+
+                p {
+                    font-size: 1rem;
+                    line-height: 1.7rem;
+                }
+            }
+        }
+
+
+        @media only screen and (max-width: 849.9px) {
+            padding: 3rem 1.5rem;
+
+            h2 {
+                display: inline-block;
+                margin: 0 auto;
+            }
+
+            .content_side {
+                .btns {
+                    justify-content: center;
+                }
+
+                .bios {
+                    grid-template-columns: repeat(1, 1fr);
+                    place-items: center;
+                }
+            }
+        }
+
+
+        @media only screen and (max-width: 499.9px) {
+            .bios {
+                gap: 1.5rem 0 !important;
+
+                .bio_item {
+                    flex-direction: column;
+                    gap: .7rem;
+                }
+            }
+
+            .btns {
+                flex-direction: column;
+            }
+        }
+    }
+`;
+
+
+export const AboutPageInfo = styled.div`
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+    padding: 100px 0;
+
+    h2 {
+        position: relative;
+        text-transform: uppercase;
+        padding-left: 1rem;
+        color: #011738;
+
+        &:before {
+            display: inline-block;
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: .3rem;
+            height: 100%;
+            background-color: #64d9a2;
+        }
+    }
+    p {
+        color: #4a4a4a;
+        line-height: 1.5rem;
+    }
+
+
+    .education_info,
+    .training_n_cert {
+        display: flex;
+        flex-direction: column;
+        min-width: 40%;
+        /* background-color: lightblue; */
+        
+        .info {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem 0;
+            padding: 30px 30px 60px 0;
+
+            li {
+                display: flex;
+                flex-direction: column;
+                gap: .5rem 0;
+                background-color: #f6fbf8;
+                padding: 1rem .75rem;
+                border-radius: .5rem;
+                box-shadow: 0 0 1rem 0 rgba(0,0,0,0.035);
+            }
+
+            .info_title, .info_text {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 0 1.5rem;
+
+                h4 {
+                    color: #53b66e;
+                    font-size: 1.2rem;
+                }
+
+                small {
+                    color: #4d5d74;
+                    font-size: 1rem;
+
+                    &:last-child {
+                        color: #99a2af;
+                        font-size: .85rem;
+                    }
+                }
+            }
+        }
+    }
+
+
+    @media only screen and (max-width: 849.9px) {
+        flex-direction: column;
+
+        .education_info,
+        .training_n_cert {
+            width: 100%;
+            gap: 3rem;
+        }
+
+        h4{
+            text-align: center;
+        }
+
+        .info_title, .info_text {
+            flex-direction: column;
+        }
+    }
+`;

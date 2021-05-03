@@ -11,7 +11,7 @@ function App() {
 (function(){
   var redirect = window.sessionStorage.redirect;
   delete window.sessionStorage.redirect;
-  if (redirect && redirect != window.location.href) {
+  if (redirect && redirect !== window.location.href) {
     // history.replaceState(null, null, redirect);
     window.history.replaceState(null, null, redirect);
     // REMOVE THIS - just showing the redirect route in the UI
