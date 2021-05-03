@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+
+ul {
+  list-style: none;
+}
+
+a, button, .btn {
+  cursor: pointer;
+}

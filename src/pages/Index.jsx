@@ -61,15 +61,15 @@ const HomePage = () => {
                             cursorRenderer={cursor => <>{cursor}</>}
                             displayTextRenderer={(text, i) => {
                             return (
-                                <>
-                                {text.split('').map((char) => {
-                                    const key = `${i}`;
+                                <span key={i}>
+                                {text.split('').map((char, j) => {
+                                    // const key = `${i}`;
                                     return (
-                                        <>{char}</>
+                                        <span key={j}>{char}</span>
                                     );
                                 })}
                                 {` Developer`}
-                                </>
+                                </span>
                             );
                             }}        
                         />

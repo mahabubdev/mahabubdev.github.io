@@ -10,6 +10,15 @@ export const GlobalStyles = createGlobalStyle`
         color: white;
     }
 
+    ul {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    .btn, a, button {
+        cursor: pointer;
+    }
+
     *::-webkit-scrollbar {
         background-color: #d4eddb;
         width: .4rem;
