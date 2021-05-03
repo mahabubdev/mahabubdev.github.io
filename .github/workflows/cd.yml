@@ -1,7 +1,13 @@
 name: portfolio_website_CD(continues deployment)
+env:
+  CI: false
+  # GITHUB_USERNAME: ${{ github.repository_owner }}
+  # REACT_APP_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This is automatically set by Github Actions
+  # USE_GITHUB_DATA: "true"
 on:
-  push: 
-    branches: [main]
+  push:
+    branches:
+      - master
   pull_request:
     branches: [main]
 
@@ -9,46 +15,21 @@ env:
   CI: false
 
 jobs:
-  build:
-    runs-on:  ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [14.x]
-
+  build-and-deploy:
+    runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
-    # - run: npm ci
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2 # If you're using actions/checkout@v2 you must set persist-credentials to false in most cases for the deployment to work correctly.
+        with:
+          persist-credentials: false
 
-    - name: Installing dependencies
-    - run: npm install
-
-    - name: Preparing github-pages-cli
-    - run: npm install --save-dev gh-pages
-
-    - name: Building app for the production
-    - run: npm run predeploy
-
-    - name: Final safe build for production
-    - run: npm run predeploy
-
-    - name: Deploying in github-pages
-    - run: npm run deploy
-    # - run: npm test
-
-# jobs:
-#   build:
-#     runs-on: ubuntu-latest
-#     steps:
-#       - uses: actions/checkout@v2
-#       - name: Use Node.js
-#         uses: actions/setup-node@v1
-#         with:
-#           node-version: '14.x'
-#       - run: npm install
-#       - run: npm run build
-#       # - run: npm test
+      - name: Install and Build 🔧 # Build the Project
+        run: |
+          npm install
+          npm run build
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          # GITHUB_TOKEN : ${{ secrets.GITHUB_TOKEN }} # This is provided by GitHub.
+          BRANCH: gh-pages # The branch the action should deploy to.
+          FOLDER: build # The folder the action should deploy.
