@@ -5,9 +5,10 @@ env:
   user_email: 'github-actions[bot]@users.noreply.github.com'
   github_token: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
   repository: ${{ github.repository }}
-  # GITHUB_USERNAME: ${{ github.repository_owner }}
-  # REACT_APP_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This is automatically set by Github Actions
-  # USE_GITHUB_DATA: "true"
+  REACT_APP_EMAILJS_USER_ID: ${{ secrets.EMAILJS_USER_ID }}
+  REACT_APP_EMAILJS_SERVICE_KEY: ${{ secrets.EMAILJS_SERVICE_KEY }}
+  REACT_APP_EMAILJS_TEM_ID: ${{ secrets.EMAILJS_TEM_ID }}
+
 on:
   push:
     branches:

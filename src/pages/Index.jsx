@@ -12,8 +12,10 @@ import { skills } from '../data/skills';
 import SkillSection from '../components/Skills';
 import ProjectSummery from '../components/Projects';
 import { projects } from '../data/projects';
-import BlogSummery from '../components/Blog/index';
+// import BlogSummery from '../components/Blog';
 import ContactArea from '../components/Contact';
+import ReactTypingEffect from 'react-typing-effect';
+
 
 
 
@@ -46,7 +48,32 @@ const HomePage = () => {
                 <IntroBio>
                     <blockquote>Hello! I am</blockquote>
                     <h1>Md Mahabub Alam</h1>
-                    <h3>React Developer</h3>
+                    <h3>
+                        <ReactTypingEffect
+                            text={[
+                                "React", "Frontend", "MERN stack",
+                                "Jn. Python"
+                            ]}
+                            speed={100}
+                            eraseSpeed={50}
+                            eraseDelay={2000}
+                            typingDelay={100}
+                            cursorRenderer={cursor => <>{cursor}</>}
+                            displayTextRenderer={(text, i) => {
+                            return (
+                                <>
+                                {text.split('').map((char) => {
+                                    const key = `${i}`;
+                                    return (
+                                        <>{char}</>
+                                    );
+                                })}
+                                {` Developer`}
+                                </>
+                            );
+                            }}        
+                        />
+                    </h3>
                     <ul className="tags">
                         <li>developer</li>
                         <li>programmer</li>
