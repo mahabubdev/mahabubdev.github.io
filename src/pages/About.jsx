@@ -1,6 +1,9 @@
 import SEO from "../components/SEO";
 
 const AboutMe = () => {
+
+    const currentEnv = process.env.NODE_ENV === 'production' ? process.env.NODE_ENV : '=development=';
+
     return (
         <div>
             <SEO title="React, MERN stack developer | Md Mahabub Alam (mahabubdev)"
@@ -24,6 +27,7 @@ const AboutMe = () => {
                 ]}
             />
             <h1>About Me - Online Resume!</h1>
+            <p>{currentEnv}</p>
         </div>
     );
 };

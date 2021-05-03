@@ -3,8 +3,10 @@ import Layout from '../components/Layout';
 import { routers } from './routes';
 
 function Routers () {
+    const currentEnv = process.env.NODE_ENV === 'production' ? process.env.NODE_ENV : undefined;
+
     return (
-        <BrowserRouter>
+        <BrowserRouter basename={currentEnv ? `https://mahabubdev.github.io/` : null}>
             <Layout>
                 <Switch>
                     {

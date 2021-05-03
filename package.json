@@ -21,6 +21,7 @@
     "react-google-font-loader": "^1.1.0",
     "react-helmet": "^6.1.0",
     "react-hook-form": "^7.3.6",
+    "react-lazy-load-image-component": "^1.5.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "react-typing-effect": "^2.0.5",
