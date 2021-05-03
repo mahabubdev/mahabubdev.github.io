@@ -13,10 +13,11 @@ ReactDOM.render(
 
 
 (function(){
-  var redirect = sessionStorage.redirect;
-  delete sessionStorage.redirect;
-  if (redirect && redirect != location.href) {
-    history.replaceState(null, null, redirect);
+  var redirect = window.sessionStorage.redirect;
+  delete window.sessionStorage.redirect;
+  if (redirect && redirect != window.location.href) {
+    // history.replaceState(null, null, redirect);
+    window.history.replaceState(null, null, redirect);
     // REMOVE THIS - just showing the redirect route in the UI
     // document.body.setAttribute('message', 'This page was redirected by 404.html, from the route: ' + redirect);
   }
