@@ -1,6 +1,10 @@
 name: portfolio_website_CD(continues deployment)
 env:
   CI: false
+      user_name: 'github-actions[bot]'
+      user_email: 'github-actions[bot]@users.noreply.github.com'
+      github_token: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
+      repository: ${{ github.repository }}
   # GITHUB_USERNAME: ${{ github.repository_owner }}
   # REACT_APP_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This is automatically set by Github Actions
   # USE_GITHUB_DATA: "true"
@@ -23,10 +27,10 @@ jobs:
       - name: Install and Build 🔧 # Build the Project
         run: |
           npm install
-          npm run build
+          npm run predeploy
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@releases/v3
-        with:
-          # GITHUB_TOKEN : ${{ secrets.GITHUB_TOKEN }} # This is provided by GitHub.
-          BRANCH: gh-pages # The branch the action should deploy to.
-          FOLDER: build # The folder the action should deploy.
+      run: |
+        git config --global user.name $user_name
+        git config --global user.email $user_email
+        git remote set-url origin https://${github_token}@github.com/${repository}
+        npm run deploy
