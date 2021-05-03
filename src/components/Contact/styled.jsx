@@ -40,6 +40,11 @@ export const ContactElements = styled.div`
     background: linear-gradient(180deg, #52b56e, #469b5f);
     border-radius: 1rem;
 
+    ._err {
+        color: yellow;
+        font-size: .8rem;
+    }
+
 
     form {
         display: flex;

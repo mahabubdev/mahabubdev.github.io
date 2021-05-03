@@ -24,7 +24,7 @@ const SkillSection = ({ allSkills }) => {
         setPrepared(true);
     }
 
-    console.log("skills---->", skills);
+    // console.log("skills---->", skills);
 
 
     return (

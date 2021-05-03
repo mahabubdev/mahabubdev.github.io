@@ -2,47 +2,36 @@ import { ContactElements, ContactSection } from './styled';
 import { Icon } from '@iconify/react';
 import sendIcon from '@iconify-icons/feather/send';
 import swal from 'sweetalert';
-import emailJs, { init } from 'emailjs-com';
+import { init, send } from 'emailjs-com';
 import { useForm } from 'react-hook-form';
 
 
 
 const ContactArea = () => {
-    // init(`user_VpPc8kzIuwkGpqyAeTYp4`);
+    init(process.env.REACT_APP_EMAILJS_USER_ID);
     const { register, handleSubmit, reset, formState: { errors } } = useForm({ mode: 'onChange' });
     const onSubmitForm = async (data) => {
-        // swal({
-        //     title: 'test view',
-        //     text: JSON.stringify(data)
-        // })
-        // let sendObj = {
-        //     from_email: data.email,
-        //     from_name: data.name,
-        //     to_name: 'Md Mahabub Alam',
-        //     message: data.message
-        // }
-
-        await emailJs.send(
-            // 'gmail',
-            // process.env.REACT_APP_EMAILJS_SERVICE_KEY,
-            `f0fdca51ead7f20c151e69766fb3ee9b`,
-            process.env.REACT_APP_EMAILJS_TEM_ID,
-            data,
-            `user_VpPc8kzIuwkGpqyAeTYp4`
-        )
+        await send(process.env.REACT_APP_EMAILJS_SERVICE_KEY, process.env.REACT_APP_EMAILJS_TEM_ID,{
+            from_name: data.name,
+            message: data.message,
+            reply_to: data.email,
+        })
         .then(() => {
             swal({
                 title: 'Message sent successfully!',
                 // text: JSON.stringify(res),
                 icon: 'success'
             })
+            reset();
         })
         .catch(err => {
             swal({
                 title: err.message,
-                // text: JSON.stringify(res),
+                // text: JSON.stringify(err),
                 icon: 'error'
             })
+            console.log(err);
+            reset();
         })
     }
 
