@@ -1,0 +1,20 @@
+language: node_js
+node_js:
+  - 14.16.1
+
+cache:  yarn
+
+install:
+  - yarn install
+
+script:
+  - yarn test
+  - yarn build
+
+deploy:
+  provider: pages
+  skip-cleanup: false
+  github-token: $GITHUB_TOKEN
+  local_dir: build
+  on:
+    branch: main
