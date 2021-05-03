@@ -46,7 +46,7 @@ const HomePage = () => {
                 <IntroBio>
                     <blockquote>Hello! I am</blockquote>
                     <h1>Md Mahabub Alam</h1>
-                    <h3>Frontend React Developer</h3>
+                    <h3>React Developer</h3>
                     <ul className="tags">
                         <li>developer</li>
                         <li>programmer</li>
