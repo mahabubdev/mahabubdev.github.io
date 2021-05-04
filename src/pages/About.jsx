@@ -1,6 +1,5 @@
 import SEO from "../components/SEO";
 import { AboutPage, AboutPageInfo } from './styled/styled.common';
-// import meImg from '../images/me___pakshiiii-removebg-preview__cropped.png';
 import { Link } from "react-router-dom";
 import { data } from '../data/about';
 import { context } from '../data/global';
