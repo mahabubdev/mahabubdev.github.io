@@ -10,7 +10,7 @@ export const context = {
     photo: 'https://i.ibb.co/8r3FwZC/image.png',
     githubPhoto: 'https://avatars.githubusercontent.com/u/56954039?v=4',
     resume: 'https://drive.google.com/u/0/uc?id=10I3sC1f4uK23Xmmtt_gp4UmKUc1I2dPe&export=download',
-    hire_link: 'http://linkedin.com/in/mahabub2000/',
+    hire_link: 'https://linkedin.com/in/mahabub2000/',
     roleTags: [
         "developer", "programmer", "game lover"
     ],
@@ -37,7 +37,10 @@ export const context = {
         },
     ],
     roleStrArr: [
-        "React", "Frontend", "MERN stack",
+        "React", 
+        "Frontend", 
+        "JavaScript",
+        "MERN stack",
         "Jn. Python",
     ],
     bioText: "I am a passionate React developer with MERN stack developments. Having skills in modern JavaScripts-based developments like web applications, and RESTful JSON APIs with ExpressJs and MongoDB. Also comfortable with React-Native/Expo, GraphQL/Apollo, etc.",
