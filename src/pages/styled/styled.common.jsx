@@ -610,17 +610,19 @@ export const AboutPageInfo = styled.div`
         .info {
             display: flex;
             flex-direction: column;
-            gap: 1.5rem 0;
+            gap: 2rem 0;
             padding: 30px 30px 60px 0;
 
             li {
                 display: flex;
                 flex-direction: column;
                 gap: .5rem 0;
-                background-color: #f6fbf8;
-                padding: 1rem .75rem;
+                flex-wrap: wrap;
+                /* background-color: #f6fbf8; */
+                background-color: white;
+                padding: 1.5rem 1rem;
                 border-radius: .5rem;
-                box-shadow: 0 0 1rem 0 rgba(0,0,0,0.035);
+                box-shadow: 0 0 1rem 0 rgba(0,0,0,0.05);
             }
 
             .info_title, .info_text {
