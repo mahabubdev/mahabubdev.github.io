@@ -31,5 +31,16 @@ export const projects = [
         featuredImg: 'https://i.ibb.co/MCCRgzP/green-mart.png',
         pub: '2021-04-03',
         summery: ''
+    },
+    {
+        name: 'Flight Booking - Book your tickets',
+        repo: '//github.com/mahabubdev/flight-booking',
+        live: '//mahabubdev.github.io/flight-booking',
+        tags: [
+            "javascript", "html", "css", "vanillaJs"
+        ],
+        featuredImg: 'https://i.ibb.co/31wpbPk/mahabubdev-github-io-flight-booking.png',
+        pub: '2021-03-12',
+        summery: ''
     }
 ];

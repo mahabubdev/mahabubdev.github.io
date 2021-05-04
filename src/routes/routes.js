@@ -1,7 +1,7 @@
 import HomePage from '../pages/Index';
 import AboutMe from '../pages/About';
 import Notfound from '../pages/404';
-import Blog from '../pages/Blog';
+// import Blog from '../pages/Blog';
 import Projects from '../pages/Projects';
 import UnderConstructionPage from '../pages/UnderConstruction';
 
@@ -19,7 +19,7 @@ export const routers = [
     },
     {
         path: '/projects',
-        component: UnderConstructionPage,
+        component: Projects,
         exact: false
     },
     {

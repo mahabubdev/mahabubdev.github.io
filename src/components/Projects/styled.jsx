@@ -29,7 +29,11 @@ export const ProjectsContainer = styled.section`
 
     .projects {
         display: grid;
-        grid-template-columns: repeat(3, minmax(360px, 1fr));
+        grid-template-columns: ${props => props.detailsPage ? 'repeat(2, 1fr)' : 'repeat(3, minmax(360px, 1fr)'};
+        /* ${props => (
+            props.detailsPage === true ? `grid-template-columns: repeat(2, 1fr));`
+            : `grid-template-columns: repeat(3, minmax(360px, 1fr));`
+        )} */
         gap: 3rem;
         place-items: center;
         margin-top: 2rem;
