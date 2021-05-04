@@ -7,6 +7,11 @@ import githubIcon from '@iconify-icons/logos/github-icon';
 import externalLink from '@iconify-icons/feather/external-link';
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { ProjectsContainer } from "../components/Projects/styled";
+import ImageLoader from 'react-loading-image';
+import Skeleton from 'react-loading-skeleton';
+
+
+
 
 const Projects = () => {
     // states & latest first
@@ -66,12 +71,20 @@ const Projects = () => {
                             // <p key={i}>{new Date(pj.pub).toDateString()}</p>
                             <div className="project_item" key={i}>
                                 <div className="img_wrap">
-                                    <LazyLoadImage
+                                    <ImageLoader
+                                        style={{
+                                            width: '100%',
+                                            height: 'auto'
+                                        }}
+                                        src={pj.featuredImg}
+                                        loading={() => <Skeleton height={250} />}
+                                    />
+                                    {/* <LazyLoadImage
                                         src={pj.featuredImg} alt={pj.name}
                                         effect="blur"
                                         threshold={50}
                                         delayMethod="throttle"
-                                    />
+                                    /> */}
                                     {/* <img src={pj.featuredImg} alt={pj.name} /> */}
                                 </div>
 

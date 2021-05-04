@@ -10,6 +10,8 @@ import { projects } from '../data/projects';
 import ContactArea from '../components/Contact';
 import ReactTypingEffect from 'react-typing-effect';
 import { context } from '../data/global';
+import ImageLoader from 'react-loading-image';
+import Skeleton from 'react-loading-skeleton';
 
 
 
@@ -100,7 +102,15 @@ const HomePage = () => {
             <AboutSummery>
                 <div className="visual_side">
                     <div className="img_wrap">
-                        <img alt="mahabubdev" src={context.photo} />
+                        {/* <img alt="mahabubdev" src={context.photo} /> */}
+                        <ImageLoader
+                            style={{
+                                minWidth: '250px',
+                                height: 'auto'
+                            }}
+                            src={context.photo}
+                            loading={() => <Skeleton width={250} height={280} />}
+                        />
                     </div>
                 </div>
 

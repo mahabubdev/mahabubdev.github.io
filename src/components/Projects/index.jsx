@@ -4,7 +4,9 @@ import { Link } from "react-router-dom";
 import { Icon } from '@iconify/react';
 import githubIcon from '@iconify-icons/logos/github-icon';
 import externalLink from '@iconify-icons/feather/external-link';
-import { LazyLoadImage } from "react-lazy-load-image-component";
+// import { LazyLoadImage } from "react-lazy-load-image-component";
+import ImageLoader from 'react-loading-image';
+import Skeleton from 'react-loading-skeleton';
 
 const ProjectSummery = ({ allProjects }) => {
     // states & latest first
@@ -39,12 +41,20 @@ const ProjectSummery = ({ allProjects }) => {
                         // <p key={i}>{new Date(pj.pub).toDateString()}</p>
                         <div className="project_item" key={i}>
                             <div className="img_wrap">
-                                <LazyLoadImage
+                            <ImageLoader
+                                style={{
+                                    minWidth: '100%',
+                                    height: 'auto'
+                                }}
+                                src={pj.featuredImg}
+                                loading={() => <Skeleton height={250} />}
+                            />
+                                {/* <LazyLoadImage
                                     src={pj.featuredImg} alt={pj.name}
                                     effect="blur"
                                     threshold={50}
                                     delayMethod="throttle"
-                                />
+                                /> */}
                                 {/* <img src={pj.featuredImg} alt={pj.name} /> */}
                             </div>
 
