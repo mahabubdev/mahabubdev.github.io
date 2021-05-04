@@ -28,7 +28,7 @@ const UnderConstructionPage = () => {
             />
 
             <img src={UnderConImg} alt="under_construction" />
-            <h2>This page is in under-construction!</h2>
+            <h2>Coming soon!</h2>
         </UnderConstruction>
     );
 };
