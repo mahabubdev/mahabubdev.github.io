@@ -56,7 +56,7 @@ const AboutMe = () => {
 
                         <div className="btns">
                             <a className="btn btn-pr" href={context.resume}>get resume</a>
-                            <Link target="_blank" className="btn btn-out" to={context.hire_link}>hire me</Link>
+                            <a target="_blank" className="btn btn-out" href={context.hire_link}>hire me</a>
                         </div>
                     </div>
                 </div>
