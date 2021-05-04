@@ -40,7 +40,18 @@ export const projects = [
             "javascript", "html", "css", "vanillaJs"
         ],
         featuredImg: 'https://i.ibb.co/31wpbPk/mahabubdev-github-io-flight-booking.png',
-        pub: '2021-03-12',
+        pub: '2021-03-08',
+        summery: ''
+    },
+    {
+        name: 'myUID - Simple UID generator',
+        repo: '//github.com/mahabubdev/myuid',
+        live: '//www.npmjs.com/package/myuid',
+        tags: [
+            "javascript", "NodeJs", "npm", "npm-registry"
+        ],
+        featuredImg: 'https://i.ibb.co/X4tWgQK/www-npmjs-com-package-myuid.png',
+        pub: '2021-03-11',
         summery: ''
     }
 ];

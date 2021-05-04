@@ -135,6 +135,8 @@ export const ProjectsContainer = styled.section`
     }
 
     @media only screen and (max-width: 849.9px) {
+        padding: ${props => props.details ? '60px 0' : ''};
+
         .projects {
             grid-template-columns: repeat(1, 1fr);
             gap: 3.5rem 0;

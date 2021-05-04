@@ -57,7 +57,7 @@ const Projects = () => {
             {/* <h1>Projects page</h1> */}
 
 
-            <ProjectsContainer detailsPage={true}>
+            <ProjectsContainer details>
                 <h2>latest projects</h2>
                 
                 <div className="projects">
