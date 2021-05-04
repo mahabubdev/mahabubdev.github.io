@@ -103,7 +103,7 @@ const Projects = () => {
                 </div>
 
                 <div className="btn_line">
-                    <Link to="//github.com/mahabubdev?tab=repositories" className="btn btn-pr">my github repositories</Link>
+                    <Link target="_blank" to="//github.com/mahabubdev?tab=repositories" className="btn btn-pr">my github repositories</Link>
                 </div>
             </ProjectsContainer>
         </>
