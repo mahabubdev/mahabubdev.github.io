@@ -74,6 +74,7 @@ export const BlogContainer = styled.section`
                     margin-top: .5rem;
                     align-items: center;
                     gap: .5rem;
+                    flex-wrap: wrap;
 
                     span {
                         display: inline-block;

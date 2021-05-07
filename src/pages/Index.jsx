@@ -6,7 +6,7 @@ import { skills } from '../data/skills';
 import SkillSection from '../components/Skills';
 import ProjectSummery from '../components/Projects';
 import { projects } from '../data/projects';
-// import BlogSummery from '../components/Blog';
+import BlogSummery from '../components/Blog';
 import ContactArea from '../components/Contact';
 import ReactTypingEffect from 'react-typing-effect';
 import { context } from '../data/global';
@@ -129,7 +129,7 @@ const HomePage = () => {
 
             <ProjectSummery allProjects={projects} />
 
-            {/* <BlogSummery allBlogs={projects} /> */}
+            <BlogSummery />
 
             <ContactArea />
         </>

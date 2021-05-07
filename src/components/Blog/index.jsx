@@ -2,30 +2,37 @@ import { BlogContainer } from "./styled";
 import { useEffect, useState } from 'react';
 import { Link } from "react-router-dom";
 import { Icon } from '@iconify/react';
-import githubIcon from '@iconify-icons/logos/github-icon';
+// import githubIcon from '@iconify-icons/logos/github-icon';
 import externalLink from '@iconify-icons/feather/external-link';
 
-const BlogSummery = ({ allBlogs }) => {
+const BlogSummery = () => {
     // states & latest first
-    const [blogs, setBlogs] = useState([]);
+    const [blogs, setBlogs] = useState({});
 
     useEffect(() => {
-        async function calculate() {
-            let latestFirstArr = await allBlogs.sort((a, b) => {
-                let aD = new Date(a.pub);
-                let bD = new Date(b.pub);
-                if (aD > bD) {
-                    return -1;
-                } else {
-                    return 1;
+        
+        async function fetchApi() {
+            await fetch(`https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@mahabubdev`, {
+                headers: {
+                    'Content-Type': 'application/json'
                 }
             })
-
-            setBlogs([...latestFirstArr.slice(0,3)]); // taking latest 3 items only
+            .then(res => res.json())
+            .then(res => {
+                console.log('api_res===>', res);
+                setBlogs({
+                    feeds: res.feed,
+                    posts: [...res.items]
+                });
+                console.log('after_loaded', blogs);
+            })
+            .catch(err => {
+                console.log(err);
+            })
         }
 
-        calculate();
-    }, [allBlogs])
+        fetchApi(); // called
+    }, []);
 
 
     return (
@@ -34,33 +41,33 @@ const BlogSummery = ({ allBlogs }) => {
             
             <div className="blogs">
                 {
-                    blogs.length > 0 && blogs.map((b, i) => (
+                    blogs.posts?.length > 0 && blogs.posts.map((b, i) => (
                         // <p key={i}>{new Date(b.pub).toDateString()}</p>
                         <div className="blog_item" key={i}>
                             <div className="img_wrap">
-                                <img src={b.featuredImg} alt={b.name} />
+                                <img src={b.thumbnail} alt={b.title} />
                             </div>
 
                             <div className="info">
-                                <h4>{b.name}</h4>
+                                <h4>{b.title}</h4>
 
                                 <ul className="tags">
                                     {
-                                        b.tags.map((_b, i) => (
+                                        b.categories.map((_b, i) => (
                                             <span key={i}>{_b}</span>
                                         ))
                                     }
                                 </ul>
 
                                 <div className="links">
-                                    <Link to={b.repo} className="btn btn-link" target="_blank">
+                                    {/* <Link to={b.repo} className="btn btn-link" target="_blank">
                                         <span>github</span>
                                         <Icon icon={githubIcon} />
-                                    </Link>
-                                    <Link to={b.live} className="btn btn-link" target="_blank">
-                                        <span>live preview</span>
+                                    </Link> */}
+                                    <a href={b.link} className="btn btn-link" target="_blank">
+                                        <span>Read</span>
                                         <Icon icon={externalLink} />
-                                    </Link>
+                                    </a>
                                 </div>
                             </div>
                         </div>

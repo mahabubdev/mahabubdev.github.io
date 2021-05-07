@@ -2,7 +2,8 @@ import githubIcon from '@iconify-icons/logos/github-icon';
 import linkedinIcon from '@iconify-icons/logos/linkedin-icon';
 import instagramIcon from '@iconify-icons/logos/instagram-icon';
 import facebookIcon from '@iconify-icons/logos/facebook';
-import discordIcon from '@iconify-icons/logos/discord';
+// import discordIcon from '@iconify-icons/logos/discord';
+import whatsappIcon from '@iconify-icons/logos/whatsapp';
 
 
 // global context data
@@ -31,9 +32,13 @@ export const context = {
             icon: facebookIcon,
             link: `//facebook.com/mahabub6333`,
         },
+        // {
+        //     icon: discordIcon,
+        //     link: `//discord.gg/YYsP2s3HvJ`,
+        // },
         {
-            icon: discordIcon,
-            link: `//discord.gg/YYsP2s3HvJ`,
+            icon: whatsappIcon,
+            link: `//api.whatsapp.com/send?phone=8801571209784`,
         },
     ],
     roleStrArr: [
