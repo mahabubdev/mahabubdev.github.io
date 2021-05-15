@@ -42,7 +42,7 @@ const Header = () => {
                         <Link to="/projects">projects</Link>
                     </li>
                     <li>
-                        <Link to="/blog">blog</Link>
+                        <Link target="_blank" to="//mahabubdev.medium.com/">blog</Link>
                     </li>
                     <li>
                         <Link className="btn btn-pr" target="_blank" to="//linkedin.com/in/mahabub2000/">hire me</Link>
