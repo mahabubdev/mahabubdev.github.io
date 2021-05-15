@@ -22,11 +22,6 @@ export const routers = [
         component: Projects,
         exact: false
     },
-    // {
-    //     path: '/blog',
-    //     component: UnderConstructionPage,
-    //     exact: false
-    // },
     {
         path: '/*',
         component: Notfound,
