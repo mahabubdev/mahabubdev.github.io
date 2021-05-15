@@ -9,8 +9,8 @@ import whatsappIcon from '@iconify-icons/logos/whatsapp';
 // global context data
 export const context = {
     photo: 'https://i.ibb.co/8r3FwZC/image.png',
-    githubPhoto: 'https://avatars.githubusercontent.com/u/56954039?v=4',
-    resume: 'https://drive.google.com/u/0/uc?id=10I3sC1f4uK23Xmmtt_gp4UmKUc1I2dPe&export=download',
+    githubPhoto: 'https://avatars.githubusercontent.com/u/56954039',
+    resume: 'https://drive.google.com/u/0/uc?id=1gkBLuuMA0p_jB3zw4iJtFZ18aI37eR5_&export=download',
     hire_link: 'https://linkedin.com/in/mahabub2000/',
     roleTags: [
         "programmer", "developer", "learner"
