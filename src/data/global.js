@@ -13,7 +13,7 @@ export const context = {
     resume: 'https://drive.google.com/u/0/uc?id=10I3sC1f4uK23Xmmtt_gp4UmKUc1I2dPe&export=download',
     hire_link: 'https://linkedin.com/in/mahabub2000/',
     roleTags: [
-        "developer", "programmer", "game lover"
+        "programmer", "developer", "learner"
     ],
     social_links: [
         {
@@ -42,11 +42,10 @@ export const context = {
         },
     ],
     roleStrArr: [
-        "React", 
-        "Frontend", 
-        "JavaScript",
-        "MERN stack",
-        "Jn. Python",
+        "Frontend React",
+        "MERN-stack",
+        "Junior Python",
+        "Junior Full-stack",
     ],
-    bioText: "I am a passionate React developer with MERN stack developments. Having skills in modern JavaScripts-based developments like web applications, and RESTful JSON APIs with ExpressJs and MongoDB. Also comfortable with React-Native/Expo, GraphQL/Apollo, etc.",
+    bioText: "I am a passionate React developer. Having expertise in modern JavaScripts-based developments like web applications, and RESTful JSON APIs with ExpressJs and MongoDB. Also comfortable with React-Native/Expo, GraphQL/Apollo, etc.",
 };

@@ -4,19 +4,19 @@ export const data = {
         {label: 'Full Name', value: 'Md Mahabub Alam'},
         {label: 'DoB', value: 'Nov 22, 2000'},
         {label: 'Address', value: 'Keshabpur, Jashore'},
-        {label: 'Phone', value: '(880)-1571-209784'},
+        {label: 'Phone', value: '(880) 1571 209784'},
     ],
     education: [
         {
             institute: 'National University',
             timeline: '2019 - Present',
-            degree: 'Bachelor in Science (B.Sc.)',
+            degree: 'Bachelor of Science',
             context: 'Statistics'
         },
         {
             institute: 'Chuknagar College',
-            timeline: '2016-2018',
-            degree: 'HSC - Higher School Certification',
+            timeline: '2016 - 2018',
+            degree: 'Higher School Certification',
             context: 'Science'
         }
     ],

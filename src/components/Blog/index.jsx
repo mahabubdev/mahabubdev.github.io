@@ -22,7 +22,7 @@ const BlogSummery = () => {
                 console.log('api_res===>', res);
                 setBlogs({
                     feeds: res.feed,
-                    posts: [...res.items]
+                    posts: [...res.items.slice(0,3)]
                 });
                 console.log('after_loaded', blogs);
             })
@@ -76,7 +76,7 @@ const BlogSummery = () => {
             </div>
 
             <div className="btn_line">
-                <Link to="/blog" className="btn btn-pr">explore more</Link>
+                <Link to="//mahabubdev.medium.com/" target="_blank" className="btn btn-pr">explore more</Link>
             </div>
         </BlogContainer>
     )

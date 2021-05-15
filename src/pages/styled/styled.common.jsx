@@ -178,7 +178,7 @@ export const IntroPhoto = styled.div`
         max-width: 100%;
         height: auto;
         border-radius: 50%;
-        border: 2px solid rgba(35, 55, 35, 0.5);
+        border: 2px solid rgba(35, 55, 35, 0.05);
         box-shadow: 0 0 1em 0 rgba(0,0,0,0.05);
     }
 
@@ -194,7 +194,7 @@ export const IntroPhoto = styled.div`
         background-image: url(${dotDotImg});
         transform: rotate(30deg);
         z-index: -1;
-        animation: svgAnimation 5s infinite;
+        animation: svgAnimation 3.5s infinite;
         /* https://discord.gg/DXbpS4fc */
     }
 
@@ -206,13 +206,13 @@ export const IntroPhoto = styled.div`
         }
         35% {
             transform: rotate(33deg);
-            top: -24%;
-            left: -25%;
+            top: -24.5%;
+            left: -24.5%;
         }
         70% {
             transform: rotate(36deg);
-            top: -22%;
-            left: -24%;
+            top: -21.5%;
+            left: -23.5%;
         }
         100% {
             transform: rotate(30deg);

@@ -31,6 +31,7 @@ export const BlogContainer = styled.section`
         display: grid;
         grid-template-columns: repeat(3, minmax(360px, 1fr));
         gap: 3rem;
+        
         place-items: center;
         margin-top: 2rem;
 
@@ -106,6 +107,16 @@ export const BlogContainer = styled.section`
                 }
             }
         }
+
+
+        @media only screen and (max-width: 1199.9px) {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        @media only screen and (max-width: 899.9px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
     }
 
     .btn_line {
@@ -116,4 +127,10 @@ export const BlogContainer = styled.section`
         align-items: center;
         align-content: center;
     }
+
+    /* @media only screen and (max-width: 767.9px) {
+        width: 85%;
+        max-width: 1500px;
+        margin: 0 auto;
+    } */
 `;

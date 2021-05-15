@@ -20,11 +20,11 @@ import Skeleton from 'react-loading-skeleton';
 const HomePage = () => {
     return (
         <>
-            <SEO title="React, MERN stack developer | Md Mahabub Alam (mahabubdev)"
+            <SEO title="Mahabub | Frontend Developer | Full-stack Developer"
                 meta={[
                     {
                         name: 'position',
-                        content: 'React | MERN stack developer'
+                        content: 'Junior Full-stack developer'
                     },
                     {
                         name: 'author',
@@ -32,11 +32,11 @@ const HomePage = () => {
                     },
                     {
                         name: 'og:title',
-                        content: 'React, MERN stack developer'
+                        content: 'React developer, MERN stack developer, Junior Full-stack developer'
                     },
                     {
                         name: 'og:description',
-                        content: 'I am a passionate react, mern stack developer. I love JavaScript and React based web technologies.'
+                        content: 'I am a passionate react and mern-stack developer. I love JavaScript and it\'s related technologies.'
                     },
                 ]}
             />
@@ -44,7 +44,7 @@ const HomePage = () => {
             <IntroSection>
                 <IntroBio>
                     <blockquote>Hello! I am</blockquote>
-                    <h1>Md Mahabub Alam</h1>
+                    <h1>Mahabub</h1>
                     <h3>
                         <ReactTypingEffect
                             text={context.roleStrArr}
