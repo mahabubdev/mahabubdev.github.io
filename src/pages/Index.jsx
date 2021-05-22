@@ -43,8 +43,8 @@ const HomePage = () => {
 
             <IntroSection>
                 <IntroBio>
-                    <blockquote>Hello! I am</blockquote>
-                    <h1>Mahabub</h1>
+                    <blockquote>{context.smallHeading}</blockquote>
+                    <h1>{context.heading}</h1>
                     <h3>
                         <ReactTypingEffect
                             text={context.roleStrArr}

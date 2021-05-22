@@ -8,6 +8,8 @@ import whatsappIcon from '@iconify-icons/logos/whatsapp';
 
 // global context data
 export const context = {
+    heading: 'Md Mahabub A.',
+    smallHeading: 'Hi there!',
     photo: 'https://i.ibb.co/8r3FwZC/image.png',
     githubPhoto: 'https://avatars.githubusercontent.com/u/56954039',
     resume: 'https://drive.google.com/u/0/uc?id=1a6YHmATAKkSq7iL49sh1fumEK0cJhNWe&export=download',
