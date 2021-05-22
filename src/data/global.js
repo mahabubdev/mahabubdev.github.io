@@ -10,7 +10,7 @@ import whatsappIcon from '@iconify-icons/logos/whatsapp';
 export const context = {
     photo: 'https://i.ibb.co/8r3FwZC/image.png',
     githubPhoto: 'https://avatars.githubusercontent.com/u/56954039',
-    resume: 'https://drive.google.com/u/0/uc?id=1gkBLuuMA0p_jB3zw4iJtFZ18aI37eR5_&export=download',
+    resume: 'https://drive.google.com/u/0/uc?id=1a6YHmATAKkSq7iL49sh1fumEK0cJhNWe&export=download',
     hire_link: 'https://linkedin.com/in/mahabub2000/',
     roleTags: [
         "programmer", "developer", "learner"
@@ -42,10 +42,10 @@ export const context = {
         },
     ],
     roleStrArr: [
-        "Frontend React",
-        "MERN-stack",
+        "Junior Frontend",
+        "React",
+        "Junior NodeJS",
         "Junior Python",
-        "Junior Full-stack",
     ],
     bioText: "I am a passionate React developer. Having expertise in modern JavaScripts-based developments like web applications, and RESTful JSON APIs with ExpressJs and MongoDB. Also comfortable with React-Native/Expo, GraphQL/Apollo, etc.",
 };
