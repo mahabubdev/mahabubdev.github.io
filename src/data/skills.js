@@ -2,8 +2,8 @@
 
 import jsIcon from '@iconify-icons/logos/javascript';
 import bootstrapIcon from '@iconify-icons/logos/bootstrap';
-import html5 from '@iconify-icons/logos/html-5';
-import css3 from '@iconify-icons/logos/css-3';
+// import html5 from '@iconify-icons/logos/html-5';
+// import css3 from '@iconify-icons/logos/css-3';
 import es6Icon from '@iconify-icons/logos/es6';
 import reactIcon from '@iconify-icons/logos/react';
 import reactRouter from '@iconify-icons/logos/react-router';

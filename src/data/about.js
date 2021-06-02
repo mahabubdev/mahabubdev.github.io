@@ -7,23 +7,17 @@ export const data = {
         {label: 'Phone', value: '(880) 1629 235256'},
     ],
     education: [
-        // {
-        //     institute: 'National University',
-        //     timeline: '2019 - Present',
-        //     degree: 'Bachelor of Science',
-        //     context: 'Statistics'
-        // },
-        {
-            institute: 'Chuknagar College',
-            timeline: '2016 - 2018',
-            degree: 'Higher School Certification (HSC)',
-            context: 'Science'
-        },
         {
             institute: 'Green University',
-            timeline: '2021 - Present',
-            degree: 'Bachelor of Science (B.Sc.)',
+            timeline: '2021-Present',
+            degree: 'Bachelor of Science (B.Sc)',
             context: 'Computer Science & Engineering (CSE)'
+        },
+        {
+            institute: 'Chuknagar College',
+            timeline: '2016-2018',
+            degree: 'Higher School Certification (HSC)',
+            context: 'Science'
         }
     ],
     trc: [
