@@ -18,13 +18,19 @@ export const data = {
             timeline: '2016 - 2018',
             degree: 'Higher School Certification (HSC)',
             context: 'Science'
+        },
+        {
+            institute: 'Green University',
+            timeline: '2021 - Present',
+            degree: 'Bachelor of Science (B.Sc.)',
+            context: 'Computer Science & Engineering (CSE)'
         }
     ],
     trc: [
         {
             title: 'Complete web development with J.M.',
             subTitle: 'Programming Hero',
-            timeline: 'Dec 2020 - Present',
+            timeline: 'Dec 2020 - May 2021',
             type: 'Bootcamp Training',
             credential: '',
         },
