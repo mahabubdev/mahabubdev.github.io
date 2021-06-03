@@ -12,7 +12,7 @@ export const context = {
     smallHeading: 'Hi there!',
     photo: 'https://i.ibb.co/8r3FwZC/image.png',
     githubPhoto: 'https://avatars.githubusercontent.com/u/56954039',
-    resume: 'https://drive.google.com/u/0/uc?id=1a6YHmATAKkSq7iL49sh1fumEK0cJhNWe&export=download',
+    resume: 'https://drive.google.com/file/d/1Lz3kyQft9xlxFgiERhexl4ksEko111vy/view?usp=sharing',
     hire_link: 'https://linkedin.com/in/mahabub2000/',
     roleTags: [
         "programmer", "developer", "learner"
@@ -40,7 +40,7 @@ export const context = {
         // },
         {
             icon: whatsappIcon,
-            link: `//api.whatsapp.com/send?phone=8801571209784`,
+            link: `//api.whatsapp.com/send?phone=8801629235256`,
         },
     ],
     roleStrArr: [
