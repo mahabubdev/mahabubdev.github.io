@@ -87,7 +87,7 @@ const HomePage = () => {
                     </ul>
 
                     <div className="btns">
-                        <a rel="noopener noreferrer" className="btn btn-pr" href={context.resume}>get resume</a>
+                        <a target="_blank" rel="noopener noreferrer" className="btn btn-pr" href={context.resume}>get resume</a>
                         <Link className="btn btn-out" to='/about'>about me</Link>
                     </div>
                 </IntroBio>
