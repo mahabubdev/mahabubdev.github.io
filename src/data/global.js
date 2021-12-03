@@ -15,7 +15,7 @@ export const context = {
     resume: 'https://drive.google.com/file/d/1LUZXoeeDm67qjp7nb1NdlM-VwaZqVumr/view?usp=sharing',
     hire_link: 'https://linkedin.com/in/mahabub2000/',
     roleTags: [
-        "learnder", "developer", "programmer"
+        "learner", "developer", "programmer"
     ],
     social_links: [
         {
