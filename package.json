@@ -40,7 +40,7 @@
     "deploy": "gh-pages -d build"
   },
   "engines": {
-    "node": "14.x"
+    "node": "16.x"
   },
   "eslintConfig": {
     "extends": [
