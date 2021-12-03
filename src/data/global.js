@@ -2,7 +2,7 @@ import githubIcon from '@iconify-icons/logos/github-icon';
 import linkedinIcon from '@iconify-icons/logos/linkedin-icon';
 import instagramIcon from '@iconify-icons/logos/instagram-icon';
 import facebookIcon from '@iconify-icons/logos/facebook';
-// import discordIcon from '@iconify-icons/logos/discord';
+import discordIcon from '@iconify-icons/logos/discord-icon';
 import whatsappIcon from '@iconify-icons/logos/whatsapp';
 
 
