@@ -12,15 +12,15 @@ export const context = {
     smallHeading: 'Hi there!',
     photo: 'https://i.ibb.co/8r3FwZC/image.png',
     githubPhoto: 'https://avatars.githubusercontent.com/u/56954039',
-    resume: 'https://drive.google.com/file/d/1Lz3kyQft9xlxFgiERhexl4ksEko111vy/view?usp=sharing',
+    resume: 'https://drive.google.com/file/d/1LUZXoeeDm67qjp7nb1NdlM-VwaZqVumr/view?usp=sharing',
     hire_link: 'https://linkedin.com/in/mahabub2000/',
     roleTags: [
-        "programmer", "developer", "learner"
+        "learnder", "developer", "programmer"
     ],
     social_links: [
         {
             icon: githubIcon,
-            link: `//github.com/mahabubdev/`,
+            link: `//github.com/mahabub72/`,
         },
         {
             icon: linkedinIcon,
@@ -28,23 +28,23 @@ export const context = {
         },
         {
             icon: instagramIcon,
-            link: `//instagram.com/mahabub_74`,
+            link: `//instagram.com/mahabub__7`,
         },
         {
             icon: facebookIcon,
             link: `//facebook.com/mahabub6333`,
         },
-        // {
-        //     icon: discordIcon,
-        //     link: `//discord.gg/YYsP2s3HvJ`,
-        // },
+        {
+            icon: discordIcon,
+            link: `//discord.gg/vtWkJ4e8zX`,
+        },
         {
             icon: whatsappIcon,
             link: `//api.whatsapp.com/send?phone=8801629235256`,
         },
     ],
     roleStrArr: [
-        "Junior Frontend",
+        "Frontend",
         "React",
         "Junior NodeJS",
         "Junior Python",
