@@ -4,7 +4,7 @@ import jsIcon from '@iconify-icons/logos/javascript';
 import bootstrapIcon from '@iconify-icons/logos/bootstrap';
 // import html5 from '@iconify-icons/logos/html-5';
 // import css3 from '@iconify-icons/logos/css-3';
-import es6Icon from '@iconify-icons/logos/es6';
+//import es6Icon from '@iconify-icons/logos/es6';
 import reactIcon from '@iconify-icons/logos/react';
 import reactRouter from '@iconify-icons/logos/react-router';
 import reduxIcon from '@iconify-icons/logos/redux';
@@ -35,7 +35,7 @@ import travisCi from '@iconify-icons/logos/travis-ci';
 import herokuIcon from '@iconify-icons/logos/heroku-icon';
 import netlifyIcon from '@iconify-icons/logos/netlify';
 import firebaseIcon from '@iconify-icons/logos/firebase';
-import postmanIcon from '@iconify-icons/logos/postman';
+//import postmanIcon from '@iconify-icons/logos/postman';
 // import nginxIcon from '@iconify-icons/logos/nginx';
 // import expoIcon from '@iconify-icons/logos/expo';
 // import expoIcon from '@iconify-icons/logos/expo-icon';
@@ -224,12 +224,12 @@ export const skills = [
         icon: gitIcon,
         level: 'tools'
     },
-    {
+    /* {
         name: 'postman',
         label: 'Postman',
         icon: postmanIcon,
         level: 'tools'
-    },
+    }, */
     {
         name: 'webpack',
         label: 'Webpack',
