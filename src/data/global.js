@@ -49,5 +49,5 @@ export const context = {
         "Jn. NodeJS",
         "Jn. Python",
     ],
-    bioText: "I am a student at CSE and junior software engineer. Having expertise in modern JavaScripts-based developments like web applications, and RESTful JSON APIs with ExpressJs and MongoDB. Also comfortable with Python, SQLs, GraphQL/Apollo, etc.",
+    bioText: "I am a student at CSE and upcoming :_: junior software engineer. Having expertise in modern JavaScripts-based developments like web applications, and RESTful JSON APIs with ExpressJs and MongoDB. Also comfortable with Python, SQLs, GraphQL/Apollo, etc.",
 };
