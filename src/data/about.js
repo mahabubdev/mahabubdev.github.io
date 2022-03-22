@@ -26,7 +26,7 @@ export const data = {
             subTitle: 'Programming Hero',
             timeline: 'Dec 2020 - May 2021',
             type: 'Bootcamp Training',
-            credential: 'https://drive.google.com/file/d/1iE3jkmceylnt7158hdu1RpIQoOfPwsUe/view?usp=sharing',
+            credential: `//https://drive.google.com/file/d/1iE3jkmceylnt7158hdu1RpIQoOfPwsUe/view?usp=sharing`,
         },
         // {
         //     title: 'APIs and Microservices - freeCodeCamp',
