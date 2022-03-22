@@ -12,15 +12,15 @@ export const context = {
     smallHeading: 'Hi there!',
     photo: 'https://i.ibb.co/8r3FwZC/image.png',
     githubPhoto: 'https://avatars.githubusercontent.com/u/56954039',
-    resume: 'https://drive.google.com/file/d/1LUZXoeeDm67qjp7nb1NdlM-VwaZqVumr/view?usp=sharing',
+    resume: 'https://drive.google.com/file/d/1YSx6QrPT8T4LWW-ugnWUIc-VoLC0uLMw/view?usp=sharing',
     hire_link: 'https://linkedin.com/in/mahabub2000/',
     roleTags: [
-        "learner", "developer", "programmer"
+        "learner", "programmer", "developer"
     ],
     social_links: [
         {
             icon: githubIcon,
-            link: `//github.com/mahabub72/`,
+            link: `//github.com/0xMahabub/`,
         },
         {
             icon: linkedinIcon,
@@ -44,10 +44,10 @@ export const context = {
         },
     ],
     roleStrArr: [
-        "Frontend",
+        "Backend",
         "React",
-        "Junior NodeJS",
-        "Junior Python",
+        "Jn. NodeJS",
+        "Jn. Python",
     ],
-    bioText: "I am a passionate React developer. Having expertise in modern JavaScripts-based developments like web applications, and RESTful JSON APIs with ExpressJs and MongoDB. Also comfortable with React-Native/Expo, GraphQL/Apollo, etc.",
+    bioText: "I am a passionate full-stack developer. Having expertise in modern JavaScripts-based developments like web applications, and RESTful JSON APIs with ExpressJs and MongoDB. Also comfortable with Python, SQLs, GraphQL/Apollo, etc.",
 };
