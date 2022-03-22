@@ -1,20 +1,20 @@
 export const data = {
-    photo: 'https://i.ibb.co/8r3FwZC/image.png',
+    photo: 'https://avatars.githubusercontent.com/u/56954039',
     bio: [
         {label: 'Full Name', value: 'Md Mahabub Alam'},
         {label: 'DoB', value: 'Nov 22, 2000'},
         {label: 'Address', value: 'Jashore, BD'},
-        {label: 'Phone', value: '(880) 162 923 5256'},
+        {label: 'Whatsapp', value: '(880)162-923-5256'},
     ],
     education: [
         {
             institute: 'Green University of Bangladesh',
             timeline: '2021-Present',
-            degree: 'Bachelor of Science (B.Sc)',
+            degree: 'Bachelor of Science (B.Sc.)',
             context: 'Computer Science & Engineering (CSE)'
         },
         {
-            institute: 'Chuknagar College, Dumuria, Khulna',
+            institute: 'Chuknagar College',
             timeline: '2016-2018',
             degree: 'Higher School Certification (HSC)',
             context: 'Science'
