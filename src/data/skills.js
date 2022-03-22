@@ -23,6 +23,7 @@ import prismaIcon from '@iconify-icons/logos/prisma';
 // import postgresqlIcon from '@iconify-icons/logos/postgresql';
 // import sqlIcon from '@iconify-icons/logos/postgresql';
 import sqlIcon from '@iconify-icons/carbon/sql';
+import cpp from '@iconify-icons/logos/c-plusplus';
 import materialUi from '@iconify-icons/logos/material-ui';
 import webpackIcon from '@iconify-icons/logos/webpack';
 import pythonIcon from '@iconify-icons/logos/python';
@@ -52,12 +53,12 @@ export const skills = [
         icon: jsIcon,
         level: 'expert'
     },
-    {
+    /*{
         name: 'es6',
         label: 'ES6',
         icon: es6Icon,
         level: 'expert'
-    },
+    },*/
     
     {
         name: 'react',
@@ -65,12 +66,12 @@ export const skills = [
         icon: reactIcon,
         level: 'expert'
     },
-    {
+    /*{
         name: 'react-router',
         label: 'React-Router',
         icon: reactRouter,
         level: 'expert'
-    },
+    }, */
     {
         name: 'redux',
         label: 'Redux',
@@ -156,12 +157,12 @@ export const skills = [
         icon: graphqlIcon,
         level: 'comfortable'
     },
-    {
+    /*{
         name: 'apollo',
         label: 'Apollo',
         icon: apollostackIcon,
         level: 'comfortable'
-    },
+    }, */
     {
         name: 'ubuntu',
         label: 'Ubuntu',
@@ -179,6 +180,12 @@ export const skills = [
         name: 'typescript',
         label: 'TypeScript',
         icon: typescriptIcon,
+        level: 'familiar'
+    },
+    {
+        name: 'c/c++',
+        label: 'C/C++',
+        icon: cpp,
         level: 'familiar'
     },
     {
