@@ -10,8 +10,8 @@ import whatsappIcon from '@iconify-icons/logos/whatsapp';
 export const context = {
     heading: 'Md Mahabub A.',
     smallHeading: 'Hi there!',
-    photo: 'https://i.ibb.co/8r3FwZC/image.png',
-    githubPhoto: 'https://avatars.githubusercontent.com/u/56954039',
+    photo: 'https://avatars.githubusercontent.com/u/56954039',
+    githubPhoto: 'https://avatars.githubusercontent.com/u/86561283',
     resume: 'https://drive.google.com/file/d/1YSx6QrPT8T4LWW-ugnWUIc-VoLC0uLMw/view?usp=sharing',
     hire_link: 'https://linkedin.com/in/mahabub2000/',
     roleTags: [
